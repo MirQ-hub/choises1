@@ -18,10 +18,10 @@ function v01() {
     let age = year - byear
 
     if(age <= 18){
-        document.getElementById("allow").innerHTML="Liian nuori"
+        document.getElementById("allow").innerHTML="Too young"
     }
     else {
-        document.getElementById("allow").innerHTML="Tervetuloa"
+        document.getElementById("allow").innerHTML="Welcome!"
     }
 
 
@@ -99,7 +99,7 @@ function v05() {
 
 function v06() {
     const zero = "zero"
-    const positive = " positive"
+    const positive = "positive"
     const negative = "negative"
 
     let num3 = document.
@@ -158,8 +158,8 @@ function v07() {
 
 function v08() {
 
- const yes = "is leap year"
  const not = "is not leap year"
+ const yes = " is leap year"
  
  let year = Number(document.getElementById("yearx").value);
 

@@ -120,25 +120,78 @@ function v06() {
 
 function v07() {
 
-  let smallest = document.getElementById("digit_a").value;
+  let digA = document.getElementById("digit_a").value;
   let digB = document.getElementById("digit_b").value;
   let digC = document.getElementById("digit_c").value;
   let digD = document.getElementById("digit_d").value;
+  let smallest = digA;
+
+ if (digB < smallest){
+    smallest = digB
+    }
+
+    if (digC < smallest){
+        smallest = digC
+    }
+
+    if (digD < smallest){
+        smallest = digD
+    }
+    document.getElementById("smallest").innerHTML=smallest;
   
- 
 
+   let biggest = digA;
 
-
-   document.getElementById("smallest").innerHTML=smallest;
-
-   
-
-
-
-
-}
+   if (digB > biggest){
+      biggest = digB
+      }
+  
+      if (digC > biggest){
+          biggest = digC
+      }
+  
+      if (digD > biggest){
+          biggest = digD
+      }
+      document.getElementById("biggest").innerHTML=biggest;
+    }
 
 function v08() {
+
+ const yes = "is leap year"
+ const not = "is not leap year"
+ 
+ let year = Number(document.getElementById("yearx").value);
+
+ if(year % 4 === 0){
+    document.getElementById
+    ("leap_year").innerHTML=yes;
+ }
+ else{ document.getElementById
+    ("leap_year").innerHTML=not;}
+
+    if(year % 100 === 0){
+        document.getElementById
+        ("leap_year").innerHTML=yes;}
+
+        else{ document.getElementById
+            ("leap_year").innerHTML=not;}
+
+            if(year % 400 === 0){
+                document.getElementById
+                ("leap_year").innerHTML=yes;
+             }
+
+             else{ document.
+                getElementById
+                          ("leap_year").
+                innerHTML=not;}
+
+
+
+
+
+
 
 }
 
@@ -148,4 +201,21 @@ function v09() {
 	const FLOWER3 = '<img alt="flower3" src="img/flower3.png">';
 	const FLOWER4 = '<img alt="flower4" src="img/flower4.png">';  
 
+    let num= Number(document.getElementById("number4").value)
+
+    if(num % 3 === 0){
+        document.getElementById("flower").innerHTML = FLOWER1
+    }
+    else {document.getElementById("flower").innerHTML=FLOWER2
+    }
+    if (num >10){document.getElementById("flower").innerHTML += FLOWER3
+    }
+    else {document.getElementById("flower").innerHTML += FLOWER4
+
+    }
+
+
+
 }
+
+
